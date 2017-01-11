@@ -4,6 +4,13 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content = "width=device-width, initial-scale-1.0"/>
         <title>시간표</title>
+        
+        <style>
+            #schedul > dl {display: flex;}
+            #schedul > dl > dt, #schedul > dl > dd {
+                flex: 1;
+            }
+        </style>
     </head>
     
     <body>
@@ -24,7 +31,7 @@
             
             <dl>
                 <dt class="time">
-                    
+                    <div>06~07</div>
                 </dt>
                 <dd>Week 01</dd>
                 <dd>Week 02</dd>
@@ -36,7 +43,10 @@
             </dl>
             
             <dl>
-                <dt></dt>
+                <dt class="time">
+                    <div>07~08</div>
+                    <div>07~09</div>
+                </dt>
             </dl>
         </div>
     </body>
