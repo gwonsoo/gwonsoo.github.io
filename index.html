@@ -2,58 +2,190 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content = "width=device-width, initial-scale-1.0"/>
+        <meta name="viewport" content = "withh=device-withh, initial-scale-1.0"/>
         <title>시간표</title>
         
         <style>
-            #schedule > dl {display: flex;}
-            #schedule > dl > dt, #schedul > dl > dd {
-                flex: 1;
+            #title {
+                font-size: 20px;
+                font-weight: bold;
                 text-align: center;
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
             }
-            #schedule > dl > dt {
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                text-align: center;
+                padding: 5px;
+                border: 1px solid #595959;
+                box-sizing: border-box;
+            }
+            th {
                 background: #595959;
                 color: #FFF;
-                font-weight: bold;
             }
+            
+            #print_none {
+                margin-top: 10px;
+                text-align: center;
+            }
+            #print_none button {
+                font-size: 18px;
+            }
+            
+            @media print{
+                #print_none {
+                    display: none;
+                }
+            }
+            
+            .week > th {
+                border-right: 1px solid #FFF;
+            }
+            .week > th.firstWeek {
+                border-bottom: 1px solid #FFF;
+            }
+            .week > th.lastWeek {
+                border-right: 1px solid #595959;
+            }
+            th.time {
+                border-bottom: 1px solid #FFF;
+            }
+            th.time
         </style>
     </head>
     
     <body>
         <div id="title">
+            2017. 01 ~ 02
         </div>
         
-        <div id="schedule">
-            <dl>
-                <dt></dt>
-                <dt>월</dt>
-                <dt>화</dt>
-                <dt>수</dt>
-                <dt>목</dt>
-                <dt>금</dt>
-                <dt>토</dt>
-                <dt>일</dt>
-            </dl>
+        <table id="schedule">
+            <tr class="week">
+                <th class="firstWeek"></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+                <th class="lastWeek">일</th>
+            </tr>
             
-            <dl>
-                <dt class="time">
-                    <div>06~07</div>
-                </dt>
-                <dd>Week 01</dd>
-                <dd>Week 02</dd>
-                <dd>Week 03</dd>
-                <dd>Week 04</dd>
-                <dd>Week 05</dd>
-                <dd>Week 06</dd>
-                <dd>Week 07</dd>
-            </dl>
+            <tr>
+                <th class="time">06 ~ 07</th>
+                <td>Week 01</td>
+                <td>Week 02</td>
+                <td>Week 03</td>
+                <td>Week 04</td>
+                <td>Week 05</td>
+                <td>Week 06</td>
+                <td>Week 07</td>
+            </tr>
             
-            <dl>
-                <dt class="time">
-                    <div>07~08</div>
-                    <div>07~09</div>
-                </dt>
-            </dl>
+            <tr>
+                <th class="time">07 ~ 08</th>
+                <td colspan="6" rowspan="2">이동기 하프</td>
+                <td rowspan="2"></td>
+            </tr>
+            
+            <tr>
+                <th class="time">08 ~ 09</th>
+            </tr>
+            
+            <tr>
+                <th class="time">09 ~ 10</th>
+                <td>표준발음법</td>
+                <td>표준어<br>사정원칙</td>
+                <td>한글<br>맞춤법</td>
+                <td>고유어</td>
+                <td>한자성어</td>
+                <td>한글맙춤법</td>
+                <td rowspan="2">모의고사</td>
+            </tr>
+            
+            <tr>
+                <th class="time">10 ~ 11</th>
+                <td>고대</td>
+                <td>중세</td>
+                <td>근세</td>
+                <td>근대</td>
+                <td>일제감정기</td>
+                <td>현대</td>
+            </tr>
+            
+            <tr>
+                <th class="time">11 ~ 12</th>
+                <td rowspan="2" colspan="7">점심시간</td>
+            </tr>
+            
+            <tr>
+                <th class="time">12 ~ 13</th>
+            </tr>
+            
+            <tr>
+                <th class="time">13 ~ 14</th>
+                <td colspan="2" rowspan="4">국어<br>기출</td>
+                <td colspan="2" rowspan="4">영어<br>기출</td>
+                <td colspan="2" rowspan="4">한국사<br>기출</td>
+                <td rowspan="4">모의고사<br>해설</td>
+            </tr>
+            
+            <tr>
+                <th class="time">14 ~ 15</th>
+            </tr>
+            
+            <tr>
+                <th class="time">15 ~ 16</th>
+            </tr>
+            
+            <tr>
+                <th class="time">16 ~ 17</th>
+            </tr>
+            
+            <tr>
+                <th class="time">17 ~ 18</th>
+                <td>Week 01</td>
+                <td>Week 02</td>
+                <td>Week 03</td>
+                <td>Week 04</td>
+                <td>Week 05</td>
+                <td>Week 06</td>
+                <td>Week 07</td>
+            </tr>
+            
+            <tr>
+                <th class="time">18 ~ 19</th>
+                <td colspan="7">저녁시간</td>
+            </tr>
+            
+            <tr>
+                <th class="time">19 ~ 20</th>
+                <td colspan="2" rowspan="4">화학<br>1,2편</td>
+                <td colspan="2" rowspan="4"></td>
+                <td colspan="2" rowspan="4">환경<br>1,2,3편</td>
+                <td rowspan="4"></td>
+            </tr>
+            
+            <tr>
+                <th class="time">20 ~ 21</th>
+            </tr>
+            
+            <tr>
+                <th class="time">21 ~ 22</th>
+            </tr>
+            
+            <tr>
+                <th class="LastTime">22 ~ 23</th>
+            </tr>
+        </table>
+        
+        <div id="print_none">
+            <button onclick="window.print()">Print</button>
         </div>
     </body>
 </html>
