@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+#wrap {
+    width: 100%;
+}
+
+h1 {
+    float: left;
+    width: 100%;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+div.part {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+div.mid {
+    float: left;
+    width: calc(50% - 30px);
+    min-width: 400px;
+    margin-left: 15px;
+}
+
+div.mid table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+div.mid table th,
+div.mid table td {
+    border: 1px solid #9D9D9D;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+div.mid table th {
+    text-align: left;
+    border: none;
+    padding-top: 10px;
+}
+
+div.mid table td > b {
+    float: left;
+    width: 25%;
+    text-align: left;
+}
+
+div.mid table td.choice_num {
+    padding: 0 10px;
+}
+
+div.mid table td.wrong_count,
+div.mid table td.sample_num {
+    width: 50px;
+}
