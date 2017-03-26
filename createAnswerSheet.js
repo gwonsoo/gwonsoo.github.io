@@ -5,7 +5,7 @@
 $(document).ready(function () {
     var wrap = $('#wrap');
     var html = '';
-    var answerText = "<b>①</b><b>②</b><b>③</b><b>④</b>"
+    var answerText = "<b>①</b><b>②</b><b>③</b><b>④</b><b>⑤</b>"
 
     for (var i = 0; i < samples.length; i++) {
         var big = samples[i];
