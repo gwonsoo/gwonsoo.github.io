@@ -9,6 +9,7 @@
 *.css~
 *.html~
 *.js~
+.iea/*
 
 # OS generated files #
 ######################
