@@ -6,6 +6,9 @@
 *.swp
 *.swo
 *.un~
+*.css~
+*.html~
+*.js~
 
 # OS generated files #
 ######################
